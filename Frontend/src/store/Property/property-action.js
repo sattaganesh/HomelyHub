@@ -1,6 +1,6 @@
 //import {propertyAction} from "./Propte-slice.js";
 //import {axiosInstance} from "../../utils/axios";
-import { propertyAction } from "./Property-slice.js";
+import { propertyAction } from "./property-slice.js";
 import { axiosInstance } from "../../utils/axios.js";
 
 // get all properties
