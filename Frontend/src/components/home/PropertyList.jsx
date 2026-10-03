@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import gsap from "gsap";
 import "../../css/Home.css";
 import {useDispatch,useSelector}from "react-redux";
-import {propertyAction} from "../../store/Property/Property-slice.js";
+import {propertyAction} from "../../store/Property/property-slice.js";
 import{getAllProperties} from "../../store/Property/property-action";
 
 const Card = ({ id, image, name, address, price }) => {
