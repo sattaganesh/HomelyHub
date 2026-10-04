@@ -13,10 +13,15 @@ const app=express();
 app.use(express.json({limit:"100mb"}));
 app.use(express.urlencoded({limit:"100mb",extend:true}));
 app.use(cookieparser());
+import cors from "cors";
+
 app.use(cors({
-    origin:process.env.ORIGIN_ACCESS_URL,
-    credentials:true
-}))
+    origin: [
+        "http://localhost:5173",
+        "https://homelyub.netlify.app"
+    ],
+    credentials: true
+}));
 const PORT=process.env.PORT;
 app.get("/",(req,res)=>{
     res.send("server is running");
