@@ -13,8 +13,6 @@ const app=express();
 app.use(express.json({limit:"100mb"}));
 app.use(express.urlencoded({limit:"100mb",extend:true}));
 app.use(cookieparser());
-import cors from "cors";
-
 app.use(cors({
     origin: [
         "http://localhost:5173",
